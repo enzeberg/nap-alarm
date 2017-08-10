@@ -1,0 +1,15 @@
+{
+  "short_name": "Nap Alarm",
+  "name": "Nap Alarm",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "lightblue",
+  "background_color": "lightblue"
+}
