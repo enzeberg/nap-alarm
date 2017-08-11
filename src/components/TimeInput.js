@@ -24,8 +24,8 @@ class TimeInput extends Component {
   render() {
     return (
       <select id="minutes" onChange={this.handleChange.bind(this)} value={this.state.selectedValue}>
-        <option value="" disabled ></option>
-        <option value="0.1"  >0.1</option>
+        <option value="" disabled></option>
+        <option value="0.5">0.5</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

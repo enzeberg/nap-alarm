@@ -4,22 +4,29 @@ class RingtonePlayer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      src: '../ringtone/Tassel-Cymophane.mp3', // the path related to "public/index.html"
+      src: './ringtone/Tassel-Cymophane.mp3', // the path related to "public/index.html"
       shouldPlay: props.shouldPlay
     };
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({shouldPlay: nextProps.shouldPlay});
+    this.setState({shouldPlay: nextProps.shouldPlay}, () => {
+      let audio = document.querySelector('audio');
+      if (this.state.shouldPlay) {
+        if (audio.currentTime !== 0) {
+          audio.currentTime = 0;
+        }
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
   }
 
   render() {
-    const html = this.state.shouldPlay ?
-                 (<audio src={this.state.src} autoPlay loop ></audio>)
-                 : ('');
     return (
-      <div>
-        {html}
+      <div className="ringtong-player">
+        <audio src={this.state.src} loop preload></audio>
       </div>
     );
   }
