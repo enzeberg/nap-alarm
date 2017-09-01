@@ -84,7 +84,7 @@ class Alarm extends Component {
         <h2>
           Wake me up in&nbsp;
           <TimeInput onDelayChanged={(delay) => this.updateDelay(delay)} />
-          &nbsp;minutes.
+          &nbsp;minute(s).
         </h2>
 
         <Timer remainingTime={this.state.delay}
