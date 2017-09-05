@@ -26,7 +26,9 @@ class RingtonePlayer extends Component {
   render() {
     return (
       <div className="ringtong-player">
-        <audio src={this.state.src} loop preload></audio>
+        <audio loop preload>
+          <source src={this.state.src} />
+        </audio>
       </div>
     );
   }
