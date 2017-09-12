@@ -14,5 +14,8 @@ You can check out the online version: [Nap Alarm](https://enzeberg.github.io/nap
 
 Finally, visit `http://localhost:3000`.
 
+## Note
+This app does not support iOS Safari.
+
 ## License
 MIT
