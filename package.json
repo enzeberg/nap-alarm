@@ -6,9 +6,9 @@
   "email": "enzeberg@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "react-scripts": "1.0.10"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
