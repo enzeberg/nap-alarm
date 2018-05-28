@@ -60,11 +60,11 @@ class Timer extends Component {
     return (
       <div className="timer" style={{opacity: timerOpacity}}>
         <p className="inner">
-          <span>{'0' + hours}</span>
-          <span>:</span>
-          <span>{minutes < 10 ? '0' + minutes : minutes}</span>
-          <span>:</span>
-          <span>{seconds < 10 ? '0' + seconds : seconds}</span>
+          {'0' + hours}
+          :
+          {minutes < 10 ? '0' + minutes : minutes}
+          :
+          {seconds < 10 ? '0' + seconds : seconds}
         </p>
       </div>
     );

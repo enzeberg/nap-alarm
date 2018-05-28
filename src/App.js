@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
-import Header from './Header';
-import Alarm from './Alarm';
-import Footer from './Footer';
+
+import Header from './components/Header';
+import Alarm from './components/Alarm';
+import Footer from './components/Footer';
+import './styles/App.css';
 
 class App extends Component {
   render() {
